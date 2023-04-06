@@ -1,0 +1,145 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+
+body{
+    background-color: rgb(141, 141, 141);
+}
+
+#calculator{
+    width: 700px;
+    height: 900px;
+    background-color: rgb(108, 87, 59);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 30px;
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#screen{
+    background-color: rgb(199, 193, 193);
+    width: 83%;
+    height: 11%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 3px solid black;
+    font-size: 120px;
+    text-align: right;
+    padding: 30px;
+    padding-bottom: 60px;
+    line-height: 200px;
+}
+
+#buttons{
+    /* background-color: rgb(162, 162, 244); */
+    width: 630px;
+    height: 75%;
+    border: 10x solid black;
+    border-radius: 15px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 160px);
+    grid-template-areas:
+    "ac-btn ac-btn percent-btn divide-btn"
+    "seven-btn eight-btn nine-btn multiplication-btn"
+    "four-btn five-btn six-btn minus-btn"
+    "one-btn two-btn three-btn plus-btn"
+    "zero-btn zero-btn comma-btn equal-btn";
+}
+
+button{
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    font-size: 50px;
+    font-weight: 700;
+    background-color: rgb(190, 168, 138);
+}
+
+button:hover{
+    background-color: rgb(166, 101, 101);
+}
+
+#ac-btn{
+    grid-area: ac-btn;
+    width: 290px;
+}
+
+#percent-btn{
+    grid-area: percent-btn;
+}
+
+#divide-btn{
+    grid-area: divide-btn;
+
+}
+
+#seven-btn{
+    grid-area: seven-btn
+}
+
+#eight-btn{
+    grid-area: eight-btn
+}
+
+#nine-btn{
+    grid-area: nine-btn
+}
+
+#multiplication-btn{
+    grid-area: multiplication-btn;
+}
+
+#four-btn{
+    grid-area: four-btn
+}
+
+#five-btn{
+    grid-area: five-btn
+}
+
+#six-btn{
+    grid-area: six-btn
+}
+
+#minus-btn{
+    grid-area: minus-btn
+}
+
+#one-btn{
+    grid-area: one-btn
+}
+
+#two-btn{
+    grid-area: two-btn
+}
+
+#three-btn{
+    grid-area: three-btn
+}
+
+#plus-btn{
+    grid-area: plus-btn
+}
+
+#zero-btn{
+    width: 290px;
+    grid-area: zero-btn;
+}
+
+#comma-btn{
+    grid-area: comma-btn;
+}
+
+#equal-btn{
+    grid-area: equal-btn;
+}
