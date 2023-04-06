@@ -49,7 +49,6 @@ multiplicationBtn.addEventListener("click", multiplicationHandler)
 divideBtn.addEventListener("click", divideHandler)
 percentBtn.addEventListener("click", percentHandler)
 
-
 // NUMBER FUNCTIONS:
 function zeroHandler(){
     let firstSym = screen.textContent[0]
@@ -66,8 +65,6 @@ function zeroHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function oneHandler(){
     let firstSym = screen.textContent[0]
@@ -85,8 +82,6 @@ function oneHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function twoHandler(){
     let firstSym = screen.textContent[0]
@@ -103,8 +98,6 @@ function twoHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function threeHandler(){
     let firstSym = screen.textContent[0]
@@ -121,8 +114,6 @@ function threeHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function fourHandler(){
     let firstSym = screen.textContent[0]
@@ -139,8 +130,6 @@ function fourHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function fiveHandler(){
     let firstSym = screen.textContent[0]
@@ -157,8 +146,6 @@ function fiveHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function sixHandler(){
     let firstSym = screen.textContent[0]
@@ -175,8 +162,6 @@ function sixHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function sevenHandler(){
     let firstSym = screen.textContent[0]
@@ -193,8 +178,6 @@ function sevenHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function eightHandler(){
     let firstSym = screen.textContent[0]
@@ -211,8 +194,6 @@ function eightHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 function nineHandler(){
     let firstSym = screen.textContent[0]
@@ -229,8 +210,6 @@ function nineHandler(){
     else if (typingSecondNum){
         secondNum = screen.textContent
     }
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
 }
 
 // SYMBOL FUNCTIONS:
@@ -303,12 +282,7 @@ function equalHandler(){
         let result = (Number(firstNum) * Number(secondNum)) / 100
         screen.textContent = result.toFixed(2)
     }
-
     firstNum = screen.textContent
     secondNum = ""
     typingSecondNum = false
-
-    console.log(`First num: ${firstNum}`)
-    console.log(`Second num: ${secondNum}`)
-    console.log(typingSecondNum)
 }
